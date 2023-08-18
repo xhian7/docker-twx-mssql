@@ -1,0 +1,45 @@
+{
+    "PlatformSettingsConfig": {
+        "BasicSettings": {
+            "ScriptTimeout": 1200
+        },
+        "AdministratorUserSettings": {
+            "InitialPassword": "Th1nw0rx4dm1NisTr4t0R"
+        },
+        "LicensingConnectionSettings": {
+            "username": "yourPTCAccount",
+            "password": "yourPassword"
+        },
+        "ContentTypeSettings": {
+            "supportedMediaEntityContentTypes": [
+                "image/svg+xml",
+                "image/png",
+                "image/gif",
+                "image/bmp",
+                "image/jpeg",
+                "application/pdf",
+                "image/vnd.microsoft.icon"
+            ]
+        },
+        "ExtensionPackageImportPolicy": {
+            "importEnabled": true,
+            "allowJarResources": true,
+            "allowJavascriptResources": true,
+            "allowCSSResources": true,
+            "allowJSONResources": true,
+            "allowWebAppResources": true,
+            "allowEntities": true,
+            "allowExtensibleEntities": true
+        }
+    },
+    "PersistenceProviderPackageConfigs": {
+		"MssqlPersistenceProviderPackage": {
+			"ConnectionInformation": {
+				"driverClass": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+				"jdbcUrl": "jdbc:sqlserver://mssql:1433;databaseName=thingworx;applicationName=Thingworx;",
+				"password": "N0th1ngS3cur3",
+				"username": "twadmin"
+			}
+		}
+	}
+}

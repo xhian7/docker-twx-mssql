@@ -1,0 +1,18 @@
+services:
+
+  twx:
+    image: my_twx:mssql
+    ports:
+      - 8000:8080
+    depends_on:
+      - mssql
+  
+  mssql:
+    image: mssql:twx
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: Chang3M3ASAP
+      SQL_TWX_PASSWD: N0th1ngS3cur3
+      SQL_DPM_PASSWD: N0tS3cur3EithEr
+    ports:
+      - 1544:1433
