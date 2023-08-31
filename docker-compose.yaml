@@ -2,13 +2,20 @@ services:
 
   twx:
     image: my_twx:mssql
+    build:
+      context: ./ThingworxPlatform
+      dockerfile: Dockerfile
     ports:
       - 8000:8080
     depends_on:
-      - mssql
+      mssql:
+        condition: service_healthy
   
   mssql:
     image: mssql:twx
+    build: 
+      context: ./InitializeMSSQL
+      dockerfile: Dockerfile
     environment:
       ACCEPT_EULA: Y
       MSSQL_SA_PASSWORD: Chang3M3ASAP
@@ -16,3 +23,8 @@ services:
       SQL_DPM_PASSWD: N0tS3cur3EithEr
     ports:
       - 1544:1433
+    healthcheck:
+      test: echo "all good"
+      interval: 40s
+      timeout: 5s
+      retries: 3
