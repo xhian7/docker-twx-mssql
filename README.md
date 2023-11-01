@@ -26,7 +26,7 @@ dpmDatabaseUsername = dpmadmin
 dpmDatabasePassword = N0tS3cur3EithEr
 
 mssqlDatabaseAdminUser = SA
-mssqlDatabaseAdminPassword = unoDos34567
+mssqlDatabaseAdminPassword = Chang3M3ASAP
 ```
 
 Since these containers are meant to be for testing or local developing purposes, it's recomended to leave previous credentials as they are.
