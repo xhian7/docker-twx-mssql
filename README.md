@@ -35,6 +35,21 @@ If you want to change `twxCredentials` you must change it in `./docker-compose.y
 
 If you want to change `dpmCredentials` or `mssqlDatabaseAdminPassword` you can do it in `./docker-compose.yaml`.
 
+## For PTC.Base-Manager->InitializeSolution
+
+If passwords didn't change, the you can use this json to initialize dpm solution:
+
+```
+{
+    "databaseUser": "dpmadmin",
+    "twxAdminUserName": "Administrator",
+    "twxAdminPassword": "Th1nw0rx4dm1NisTr4t0R",
+    "databasePassword": "N0tS3cur3EithEr",
+    "databaseJDBCString": "jdbc:sqlserver://mssql:1433;databaseName=dpmdb",
+    "twxURL": "http://twx:8080/Thingworx"
+}
+```
+
 ## To Do
 
 1. Health check command is not the most adecuate.
