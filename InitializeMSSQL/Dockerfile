@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/mssql/server:2019-latest
+FROM mcr.microsoft.com/mssql/server:2019-CU26-ubuntu-20.04
 ENV ACCEPT_EULA Y
 
 ADD --chmod=777 config/ /tmp/twx
