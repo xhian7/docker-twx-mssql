@@ -1,14 +1,11 @@
 {
     "PlatformSettingsConfig": {
         "BasicSettings": {
-            "ScriptTimeout": 1200
+            "ScriptTimeout": 1200,
+            "EnableContentSecurityPolicyFilter": true
         },
         "AdministratorUserSettings": {
-            "InitialPassword": "Th1nw0rx4dm1NisTr4t0R"
-        },
-        "LicensingConnectionSettings": {
-            "username": "yourPTCAccount",
-            "password": "yourPassword"
+            "InitialPassword": "administrator12345"
         },
         "ContentTypeSettings": {
             "supportedMediaEntityContentTypes": [
