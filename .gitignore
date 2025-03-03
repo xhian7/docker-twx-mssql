@@ -1,3 +1,4 @@
+ThingworxStorage
 ThingworxPlatform/config/*.war
 ThingworxPlatform/config/*.jar
 InitializeMSSQL/config/install

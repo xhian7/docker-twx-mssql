@@ -2,6 +2,8 @@ services:
 
   twx:
     image: my_twx:mssql
+    volumes:
+      - ./ThingworxStorage:/ThingworxStorage
     build:
       context: ./ThingworxPlatform
       dockerfile: Dockerfile
