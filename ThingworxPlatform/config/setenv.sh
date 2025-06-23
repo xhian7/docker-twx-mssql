@@ -7,7 +7,7 @@ CATALINA_OPTS="$CATALINA_OPTS -Djava.library.path=${CATALINA_BASE}/webapps/Thing
 --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED \
 --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED \
 --add-opens=java.base/java.util.regex=ALL-UNNAMED \
--Djava.net.preferIPv4Stack=true \
+-Dd64 -Djava.net.preferIPv4Stack=true \
 -Djava.awt.headless=true -Dserver -XX:+UseNUMA \
 -XX:+UseG1GC -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true \
 -Xms1000M  \

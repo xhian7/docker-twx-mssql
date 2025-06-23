@@ -1,7 +1,7 @@
 {
     "PlatformSettingsConfig": {
         "BasicSettings": {
-            "ScriptTimeout": 1200,
+            "ScriptTimeout": 12000,
             "EnableContentSecurityPolicyFilter": true
         },
         "AdministratorUserSettings": {
